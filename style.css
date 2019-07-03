@@ -22,6 +22,29 @@ aside {
       width: 100%;     
 }
 
+.cover-container {
+    position: absolute;
+    bottom: 0;
+    padding: 50px 10% 10%;
+    width: 100%;
+    color: #fff;
+    text-shadow: 0 1px 3px rgba(0,0,0,.3);
+}
+
+.cover-logo img {
+    border: 3px solid #fff;
+    border-radius: 50%;
+    max-height: 100px;
+    transition: opacity .3s ease-in-out;
+    box-shadow: 0 0 3px 3px rgba(0,0,0,.3), inset 0 0 40px 2px rgba(0,0,0,.3);
+}
+
+.cover-title {
+    font-family: Helvetica;
+    font-size: 32px;
+    font-weight: 600; 
+}
+
 #drawer-button{
     position: fixed;
     top: 10px;
@@ -35,7 +58,7 @@ aside {
     border: 0;
     text-align: center;
     vertical-align: middle;
-    background-color: #232323;
+    background-color: #6400e4;
     color: #fff;
 }
 
@@ -45,6 +68,13 @@ aside {
     font-style: normal;
     font-weight: 40;
     line-height: 1;
+    padding-right: 8px;
+    font-size: 20px;
+}
+
+#lines {
+    font-size: 25px;
+   padding: 0;
 }
 
 .drawer {
@@ -54,7 +84,7 @@ aside {
     left: 0;
     bottom: 0;
     outline: 0;
-    background-color: #232323;
+    background-color: #1d2852;
     display: none;
  }
 
@@ -65,6 +95,7 @@ aside {
   padding: 15px 0;
   overflow: auto;
 }
+
 
 .drawer-list-item a {
     position: relative;
@@ -83,10 +114,24 @@ aside {
     font-size: 11px;
     color: #909090;
     line-height: 1;
+    letter-spacing: 0.1em;
 }
 
-.drawer-list-item,.drawer-list-title{
+.drawer-list-divider {
+    display: block;
+    margin: 10px 20px;
+    border-top: 1px solid #0a0a0a;
+    -webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.04);
+    box-shadow: inset 0 1px 0 rgba(255,255,255,.04);
+    height: 8px;
+}
+
+.drawer-list-item.drawer-list-title {
+    text-transform: uppercase;
+    margin: 0 20px 10px;
+    opacity: .7;
     color: #fff;
+    letter-spacing: 0.1em;
 }
 
  .drawer-overlay {
