@@ -1,0 +1,113 @@
+* {
+    text-rendering: optimizeLegibility;
+    box-sizing: border-box,
+}
+body {
+    display: block;
+    font-size: 18px;
+    height: 100%;
+    font: 400 20px/1.6 "Noto Serif",Georgia,Cambria,"Times New Roman",Times,serif;
+}
+
+button, #blackblock {
+    cursor: pointer;
+}
+
+aside {
+    position: fixed;
+    height: 100%;
+    width: 29.4%;
+}
+
+.coverimage {
+    background-image:
+      url("asset/images/IMG_1.jpg");
+      height: 100%;
+      width: 100%;     
+}
+
+#drawer-button{
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    width: 45px;
+    height: 45px;
+    z-index: 1000;
+    font-size: 24px;
+    padding: 0;
+    outline: 0;
+    border: 0;
+    text-align: center;
+    vertical-align: middle;
+    background-color: #232323;
+    color: #fff;
+}
+
+.fa {
+    display: inline-block;
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: 40;
+    line-height: 1;
+}
+
+.drawer {
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    outline: 0;
+    background-color: #232323;
+    display: none;
+ }
+
+
+.drawer-container {
+  display: block;
+  width: 280px;
+  padding: 15px 0;
+  overflow: auto;
+}
+
+.drawer-list-item a {
+    position: relative;
+    display: block;
+    padding: 5px 20px;
+    font-family: inherit;
+    color: #fff;
+    text-decoration: none;
+    -webkit-transition: color .3s;
+    transition: color .3s;
+}
+
+.drawer-list-item {
+    font-family: "Open Sans","Myriad Pro","Lucida Grande","Lucida Sans Unicode","Lucida Sans",Geneva,Verdana,sans-serif;
+    font-weight: 700;
+    font-size: 11px;
+    color: #909090;
+    line-height: 1;
+}
+
+.drawer-list-item,.drawer-list-title{
+    color: #fff;
+}
+
+ .drawer-overlay {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+ }
+
+ .drawer-open {
+    display: block;
+    left: 280px;
+    z-index: 1000;
+   /* border: red solid*/
+}
+
+
